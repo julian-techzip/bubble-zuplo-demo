@@ -41,7 +41,7 @@
             "export": "urlForwardHandler",
             "module": "$import(@zuplo/runtime)",
             "options": {
-              "baseUrl": "https://https://workflowinbox.com/version-test/api/1.1/wf/zuplo-testecho.zuplo.io"
+              "baseUrl": "https://https://workflowinbox.com/version-test/api/1.1/wf/zuplo-test"
             }
           },
           "policies": {
