@@ -1,0 +1,55 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "My Zuplo API"
+  },
+  "paths": {
+    "/path-0": {
+      "x-zuplo-path": {
+        "pathMode": "open-api"
+      },
+      "get": {
+        "summary": "New Route",
+        "description": "Lorem ipsum dolor sit amet, **consectetur adipiscing** elit, sed do `eiusmod tempor` incididunt ut labore et dolore magna aliqua.",
+        "x-zuplo-route": {
+          "corsPolicy": "none",
+          "handler": {
+            "export": "urlForwardHandler",
+            "module": "$import(@zuplo/runtime)",
+            "options": {
+              "baseUrl": "https://echo.zuplo.io"
+            }
+          },
+          "policies": {
+            "inbound": []
+          }
+        },
+        "operationId": "1d1d8014-b4fe-414a-a17e-6f8a28ada5f3"
+      }
+    },
+    "/test": {
+      "x-zuplo-path": {
+        "pathMode": "open-api"
+      },
+      "post": {
+        "summary": "Testing Zuplo",
+        "description": "Lorem ipsum dolor sit amet, **consectetur adipiscing** elit, sed do `eiusmod tempor` incididunt ut labore et dolore magna aliqua.",
+        "x-zuplo-route": {
+          "corsPolicy": "none",
+          "handler": {
+            "export": "urlForwardHandler",
+            "module": "$import(@zuplo/runtime)",
+            "options": {
+              "baseUrl": "https://https://workflowinbox.com/version-test/api/1.1/wf/zuplo-testecho.zuplo.io"
+            }
+          },
+          "policies": {
+            "inbound": []
+          }
+        },
+        "operationId": "9312d67d-ef13-4b64-a347-cd5e2aca6a9a"
+      }
+    }
+  }
+}
